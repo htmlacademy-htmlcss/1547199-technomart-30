@@ -17,10 +17,8 @@
   			<p>
   				Телефон: <a href="tel:+78125550555">+7 (812) 555-05-55</a>
   			</p>
-  			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>	
-        <form class="login">
-          <input type="text" name="username" value="Равшан Джамшутович">
-        </form>
+  			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <span class="username">Равшан Джамшутович</span>	
         <a href="#">Мои заказы</a>
         <a href="#">Личный кабинет</a>
   			<ul>
@@ -83,11 +81,9 @@
         </div>
         <div class="checkbox-manufacture">
         <h4>Питание:</h4>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <input type="checkbox" name="accumulator" id="accumulator" checked>
-            <label for="accumulator">Аккумуляторы</label>
-            <input type="checkbox" name="chain" id="chain">
-            <label for="chain">Сетевые</label>
+          <form action="https://echo.htmlacademy.ru/">
+            <p><input type="radio" name="type" id="accumulator" checked value="accumulator">Акумуляторы</p>
+            <p><input type="radio" name="type" id="chain" value="chain">Сетевые</p>
           </form>
         </div>
         <form action="https://echo.htmlacademy.ru/" method="post">
@@ -97,9 +93,25 @@
       <section class="sort">
         <h3>Сортировка:</h3>
         <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По фуекционалу</li>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По функционалу</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="arrow-up">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="arrow-down">
+            </a>
+          </li>  
         </ul>
       </section>
   		<section class="catalog">
