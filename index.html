@@ -17,15 +17,15 @@
         <a href="#" class="search">Поиск</a>
         <a href="#" class="bookmark">Закладки: 0</a>
         <a href="#" class="basket">Корзина: 0</a>
-  			<button type="button">Оформить заказ</button>
+  			<button type="button" class="button">Оформить заказ</button>
   			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   			<p>
   				Телефон: <a href="tel:+78125550555">+7 (812) 555-05-55</a>
   			</p>
   			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>	
-  			<button type="button">Войти</button>
-  			<button type="button">Регистрация</button>
-  			<ul>
+  			<button type="button" class="button-header">Войти</button>
+  			<button type="button" class="button-header">Регистрация</button>
+  			<ul class="list-header">
   				<li>
   					<a href="#" >Компания</a>
   				</li>
@@ -91,16 +91,16 @@
   			<a href="#">Все популярные товары</a>
   				<div class="list-of-goods">
   					<ul>
-  						<li>
-  							<img src="img/snippetPop1.jpg" width="184" height="164" alt="good1">
+  						<li class="good">
+  							<img src="img/snippet3.jpg" width="184" height="164" alt="good1">
   							<p>Перфоратор BOSCH  BFG 9000</p>
   							<del>32500 Р.</del>
   							<a href="#">25500 Р.</a>
                 <button type="button">Купить</button>
                 <button type="button">В закладки</button>
   						</li>
-  						<li>
-  							<img src="img/snippetPop2.jpg" width="127" height="112" alt="good2">
+  						<li class="good">
+  							<img src="img/snippet2.jpg" width="127" height="112" alt="good2">
   							<p>new</p>
   							<p>Перфоратор BOSCH  BFG 3000</p>
   							<del>22500 Р.</del>
@@ -108,16 +108,16 @@
                 <button type="button">Купить</button>
                 <button type="button">В закладки</button>
   						</li>
-  						<li>
-  							<img src="img/snippetPop3.jpg" width="144" height="128" alt="good3">
+  						<li class="good">
+  							<img src="img/snippet1.jpg" width="144" height="128" alt="good3">
   							<p>Перфоратор BOSCH  BFG 6000</p>
   							<del>30500 Р.</del>
   							<a href="#">25500 Р.</a>
                 <button type="button">Купить</button>
                 <button type="button">В закладки</button>
   						</li>
-  						<li>
-  							<img src="img/snippetPop4.jpg" width="127" height="112" alt="good3">
+  						<li class="good">
+  							<img src="img/snippet2.jpg" width="127" height="112" alt="good3">
   							<p>new</p>
   							<p>Перфоратор BOSCH  BFG 2000</p>
   							<del>22500 Р.</del>
@@ -131,7 +131,7 @@
   		<section class="manufacturers">
   			<h2>Популярные производители:</h2>
   			<a href="#">Все производители</a>
-  			<ul class="logo">
+  			<ul class="logos">
   				<li>
   					<a href="#">
               <img src="img/bosch.png" width="126" height="37" alt="bosch">
@@ -195,8 +195,7 @@
 					<a href="#">Отправить заявку</a>
 				</li>
 			</ul>
-			
-   		</section>
+			</section>
    		<section class="contacts">
    			<div class="about">
    				<h2>Компания «Техномарт»</h2>
@@ -218,7 +217,17 @@
    				<a href="#">
    					<img src="img/map.jpg" width="300" height="158" alt="map">
    				</a>	
-   				<button type="button">Заблудились? Напишите нам!</button>
+   				<button type="button" class="button-writeus">Заблудились? Напишите нам!</button>
+            <div class="writeUs">
+              <form action="https://echo.htmlacademy.ru/" method="post" >
+                <input type="text" name="writeus" id="name" placeholder="Имя Фамилия">
+                <label for="name">Ваше имя:</label>
+                <p>Текст письма:</p>
+                <textarea name="letter" id="letter-field" rows="10">В свободной форме</textarea>
+                <input type="email" name="mail" id="mail" placeholder="email@example.com">
+                <label for="mail">Ваш e-mail:</label>
+              </form>
+            </div>
    			</div>
    		</section>
   	</main>
