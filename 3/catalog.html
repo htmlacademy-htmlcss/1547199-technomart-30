@@ -17,7 +17,7 @@
   			<a href="#" class="search">Поиск</a>
         <a href="#" class="bookmark">Закладки: 0</a>
         <a href="#" class="basket">Корзина: 0</a>
-  			<button type="button">Оформить заказ</button>
+  			<button type="button" class="button">Оформить заказ</button>
   			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   			<p>
   				Телефон: <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -26,7 +26,7 @@
         <span class="username">Равшан Джамшутович</span>	
         <a href="#">Мои заказы</a>
         <a href="#">Личный кабинет</a>
-  			<ul>
+  			<ul class="list-header">
   				<li>
   					<a href="#" >Компания</a>
   				</li>
@@ -50,7 +50,7 @@
   	<main>   
       <section class="navigation">
         <h2>Перфораторы</h2>
-        <ul>
+        <ul class="nav-list">
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a href="#">Перфораторы</a></li>
@@ -58,12 +58,12 @@
       </section>
       <section class="filter">
         <h2>Фильтр:</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post" class="form">
           <fieldset class="price-search">
             <legend>Цена:</legend>
             <input type="range" min="0" max="30000" step="1" value="20000">
             <input type="number" name="price" id="price" placeholder="0">
-            <input type="number" name="price" id="price" placeholder="30000">
+            <input type="number" name="price" id="price1" placeholder="30000">
             </fieldset>
           <fieldset class="checkbox-manufacture">
             <legend>Производители:</legend>
@@ -89,7 +89,7 @@
       </section>
       <section class="sort">
         <h3>Сортировка:</h3>
-        <ul>
+        <ul class="sort-list">
           <li>
             <a href="#">По цене</a>
           </li>
@@ -115,7 +115,7 @@
         <h2>Каталог</h2>
        		<div class="list-of-goods">
   						<ul>
-  							<li>
+  							<li class="good">
   								<img src="img/snippet1.jpg" width="144" height="128" alt="good1">
   								<p>Перфоратор BOSCH  BFG 6000</p>
   								<del>30500 Р.</del>
@@ -123,16 +123,16 @@
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
   							</li>
-                <li>
-                  <img src="img/snippet2.jpg" width="144" height="128" alt="good1">
+                <li class="good">
+                  <img src="img/snippet1.jpg" width="144" height="128" alt="good1">
                   <p>Перфоратор BOSCH  BFG 6000</p>
                   <del>30500 Р.</del>
                   <a href="#">25500 Р.</a>
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
                 </li>
-                <li>
-                  <img src="img/snippet2.jpg" width="144" height="128" alt="good1">
+                <li class="good">
+                  <img src="img/snippet1.jpg" width="144" height="128" alt="good1">
                   <p>new</p>
                   <p>Перфоратор BOSCH  BFG 6000</p>
                   <del>30500 Р.</del>
@@ -140,8 +140,8 @@
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
                 </li>
-  							<li>
-  								<img src="img/snippet3.jpg" width="127" height="112" alt="good2">
+  							<li class="good">
+  								<img src="img/snippet2.jpg" width="127" height="112" alt="good2">
                   <p>new</p>
   								<p>Перфоратор BOSCH  BFG 3000</p>
   								<del>22500 Р.</del>
@@ -149,16 +149,16 @@
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
   							</li>
-                <li>
-                  <img src="img/snippet4.jpg" width="144" height="128" alt="good1">
+                <li class="good">
+                  <img src="img/snippet1.jpg" width="144" height="128" alt="good1">
                   <p>Перфоратор BOSCH  BFG 6000</p>
                   <del>30500 Р.</del>
                   <a href="#">25500 Р.</a>
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
                 </li>
-  							<li>
-  								<img src="img/snippet5.jpg" width="127" height="112" alt="good3">
+  							<li class="good">
+  								<img src="img/snippet2.jpg" width="127" height="112" alt="good3">
   								<p>new</p>
   								<p>Перфоратор BOSCH  BFG 2000</p>
   								<del>22500 Р.</del>
@@ -166,8 +166,8 @@
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
   							</li>
-                <li>
-                  <img src="img/snippet6.jpg" width="127" height="112" alt="good1">
+                <li class="good">
+                  <img src="img/snippet2.jpg" width="127" height="112" alt="good1">
                   <p>new</p>
                   <p>Перфоратор BOSCH  BFG 3000</p>
                   <del>22500 Р.</del>
@@ -175,16 +175,16 @@
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
                 </li>
-                <li>
-                  <img src="img/snippet7.jpg" width="144" height="128" alt="good1">
+                <li class="good">
+                  <img src="img/snippet1.jpg" width="144" height="128" alt="good1">
                   <p>Перфоратор BOSCH  BFG 6000</p>
                   <del>30500 Р.</del>
                   <a href="#">25500 Р.</a>
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
                 </li>
-                <li>
-                  <img src="img/snippet8.jpg" width="127" height="112" alt="good1">
+                <li class="good">
+                  <img src="img/snippet2.jpg" width="127" height="112" alt="good1">
                   <p>new</p>
                   <p>Перфоратор BOSCH  BFG 2000</p>
                   <del>22500 Р.</del>
@@ -207,7 +207,7 @@
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
         </ul>
-        <button type="button">Следующая</button>
+        <button type="button" class="next-button">Следующая</button>
       </section>
   		<section class="about-goods">
         <h2>Пара слов о перфораторах:</h2>
