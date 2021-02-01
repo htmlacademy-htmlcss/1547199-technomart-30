@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon.ico" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/152fav.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
   	<header> 
@@ -13,15 +17,15 @@
         <a href="#" class="search">Поиск</a>
         <a href="#" class="bookmark">Закладки: 0</a>
         <a href="#" class="basket">Корзина: 0</a>
-  			<button type="button">Оформить заказ</button>
+  			<button type="button" class="button">Оформить заказ</button>
   			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   			<p>
   				Телефон: <a href="tel:+78125550555">+7 (812) 555-05-55</a>
   			</p>
   			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>	
-  			<button type="button">Войти</button>
-  			<button type="button">Регистрация</button>
-  			<ul>
+  			<button type="button" class="button-header">Войти</button>
+  			<button type="button" class="button-header">Регистрация</button>
+  			<ul class="list-header">
   				<li>
   					<a href="#" >Компания</a>
   				</li>
@@ -47,13 +51,13 @@
   			<h2>Промо-блок</h2>
   			<div class="slider">
   				<div class="slide">
-  					<img src="https://via.placeholder.com/620x266" width="620" height="266" alt="label">
+  					<img src="img/slide2.jpg" width="620" height="266" alt="label">
   					<h3>Перфораторы</h3>
   					<p>Настоящие мужские игрушки</p>
   					<a href="catalog.html">Открыть каталог</a>
 				  </div>
   				<div class="slide">
-  					<img src="https://via.placeholder.com/620x266" width="620" height="266" alt="label">
+  					<img src="img/slide1.jpg" width="620" height="266" alt="label">
   					<h3>Дрели</h3>
   					<p>Соседям на радость!</p>
   					<a href="catalog.html">Открыть каталог</a>
@@ -87,61 +91,39 @@
   			<a href="#">Все популярные товары</a>
   				<div class="list-of-goods">
   					<ul>
-  						<li>
-  							<img src="https://via.placeholder.com/184x164" width="184" height="164" alt="good1">
+  						<li class="good">
+  							<img src="img/snippet3.jpg" width="184" height="164" alt="good1">
   							<p>Перфоратор BOSCH  BFG 9000</p>
   							<del>32500 Р.</del>
   							<a href="#">25500 Р.</a>
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
   						</li>
-  						<li>
-  							<p>Перфоратор BOSCH  BFG 9000</p>
-  							<del>32500 Р.</del>
-  							<a href="#">25500 Р.</a>
-  							<button type="button">Купить</button>
-  							<button type="button">В закладки</button>
-  						</li>
-  						<li>
-  							<img src="https://via.placeholder.com/184x164" width="184" height="164" alt="good2">
+  						<li class="good">
+  							<img src="img/snippet2.jpg" width="127" height="112" alt="good2">
   							<p>new</p>
   							<p>Перфоратор BOSCH  BFG 3000</p>
   							<del>22500 Р.</del>
   							<a href="#">15500 Р.</a>
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
   						</li>
-  						<li>
-  							<p>new</p>
-  							<p>Перфоратор BOSCH  BFG 3000</p>
-  							<del>22500 Р.</del>
-  							<a href="#">15500 Р.</a>
-  							<button type="button">Купить</button>
-  							<button type="button">В закладки</button>
-  						</li>
-  						<li>
-  							<img src="https://via.placeholder.com/184x164" width="184" height="164" alt="good3">
+  						<li class="good">
+  							<img src="img/snippet1.jpg" width="144" height="128" alt="good3">
   							<p>Перфоратор BOSCH  BFG 6000</p>
   							<del>30500 Р.</del>
   							<a href="#">25500 Р.</a>
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
   						</li>
-  						<li>
-  							<p>Перфоратор BOSCH  BFG 6000</p>
-  							<del>30500 Р.</del>
-  							<a href="#">25500 Р.</a>
-  							<button type="button">Купить</button>
-  							<button type="button">В закладки</button>
-  						</li>
-  						<li>
-  							<img src="https://via.placeholder.com/184x164" width="184" height="164" alt="good3">
+  						<li class="good">
+  							<img src="img/snippet2.jpg" width="127" height="112" alt="good3">
   							<p>new</p>
   							<p>Перфоратор BOSCH  BFG 2000</p>
   							<del>22500 Р.</del>
   							<a href="#">12500 Р.</a>
-  						</li>
-  						<li>
-  							<p>new</p>
-  							<p>Перфоратор BOSCH  BFG 2000</p>
-  							<del>22500 Р.</del>
-  							<a href="#">12500 Р.</a>
-  							<button type="button">Купить</button>
-  							<button type="button">В закладки</button>
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
   						</li>
   					</ul>
   				</div>
@@ -149,45 +131,45 @@
   		<section class="manufacturers">
   			<h2>Популярные производители:</h2>
   			<a href="#">Все производители</a>
-  			<ul class="logo">
+  			<ul class="logos">
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="bosch">
+              <img src="img/bosch.png" width="126" height="37" alt="bosch">
             </a>
   				</li>
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="makita">
+              <img src="img/makita.png" width="123" height="40" alt="makita">
             </a>  					
   				</li>
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="dewalt">
+              <img src="img/dewalt.png" width="146" height="44" alt="dewalt">
             </a>  					
   				</li>
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="интерскол">
+              <img src="img/interskol.png" width="200" height="76" alt="интерскол">
             </a>  				
   				</li>
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="hitachi">
+              <img src="img/hitachi.png" width="169" height="31" alt="hitachi">
             </a>  				
   				</li>
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="lg">
+              <img src="img/lg.png" width="121" height="73" alt="lg">
             </a>  				
   				</li>
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="aeg">
+              <img src="img/aeg.png" width="151" height="98" alt="aeg">
             </a>  				
   				</li>
   				<li>
   					<a href="#">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="metabo">
+              <img src="img/metabo.png" width="206" height="73" alt="metabo">
             </a>  				
   				</li>
   			</ul>
@@ -213,8 +195,7 @@
 					<a href="#">Отправить заявку</a>
 				</li>
 			</ul>
-			
-   		</section>
+			</section>
    		<section class="contacts">
    			<div class="about">
    				<h2>Компания «Техномарт»</h2>
@@ -234,9 +215,19 @@
    				<h2>Контакты</h2>
    				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
    				<a href="#">
-   					<img src="https://via.placeholder.com/300x158" width="300" height="158" alt="map">
+   					<img src="img/map.jpg" width="300" height="158" alt="map">
    				</a>	
-   				<button type="button">Заблудились? Напишите нам!</button>
+   				<button type="button" class="button-writeus">Заблудились? Напишите нам!</button>
+            <div class="writeUs">
+              <form action="https://echo.htmlacademy.ru/" method="post" >
+                <input type="text" name="writeus" id="name" placeholder="Имя Фамилия">
+                <label for="name">Ваше имя:</label>
+                <p>Текст письма:</p>
+                <textarea name="letter" id="letter-field" rows="10">В свободной форме</textarea>
+                <input type="email" name="mail" id="mail" placeholder="email@example.com">
+                <label for="mail">Ваш e-mail:</label>
+              </form>
+            </div>
    			</div>
    		</section>
   	</main>
