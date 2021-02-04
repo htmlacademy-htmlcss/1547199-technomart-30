@@ -44,62 +44,61 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local("Cuprum"),
-	url("fonts/Cuprum.woff2") format("woff2"),
-	url("fonts/Cuprum.woff") format("woff");
+	url("../fonts/cuprum.woff2") format("woff2"),
+	url("../fonts/cuprum.woff") format("woff");
 }
 
 @font-face {
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 400;
-	src: local("Cuprum"),
-	url("fonts/Cuprum.woff2") format("woff2"),
-	url("fonts/Cuprum.woff") format("woff");	
+	src: local("PT Sans"),
+	url("../fonts/ptsans.woff2") format("woff2"),
+	url("../fonts/ptsans.woff") format("woff");	
 }
 
 /*Global*/
 
 body {
-   min-width: 940px;
-   margin: 0;
-   padding: 0;
-   font-family: 'Cuprum', 'Arial', sans-serif;
-   font-size: 18px;
-   line-height: 24px;
-   font-weight: 400;
-   color: var(--basic-white);
-   background-color: var(--basic-white);
-   background-image: url("../img/bg.jpg");
-   background-position: top center;
-   background-repeat: no-repeat;
+    min-width: 940px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-white);
+    background-color: var(--basic-white);
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 img {
-   max-width: 100%;
-   height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
 	text-decoration: none;
 }
+
 /*header*/
 
 .navigation {
 	background-color: var(--basic-background);
-	width: 1200px;
-	height: 320px;
-	
 }
 
 .navigation-top {
 	background-color: var(--deep-grey);
-	width: 1200px;
-	height: 42px;
+	padding-top: 9px;	
+	padding-bottom: 9px; 
 }
+
 .logo-main {
+	padding-top: 12px;	
+	padding-bottom: 12px; 
 	background-color: var(--basic-red);
-	width: 220px;
-	height: 47px;
 	box-shadow: 0 5px 0 0 var(--red-buttona);
 }
 
@@ -108,8 +107,6 @@ a {
 }
 
 .button {
-	width: 150px;
-	height: 42px;
 	font-size: 18px;
 	line-height: 24px;
 	text-align: center;
@@ -127,15 +124,12 @@ a {
 }
 
 .search,
-.bookmark,
-.basket {
+.bookmark {
 	color: var(--basic-white);
 }
 
-.search {
-	width: 271px;
-	height: 42px;
-
+.basket {
+	color: var(--basic-white);
 }
 
 .search:focus {
@@ -145,11 +139,6 @@ a {
 
 .search:active {
 	color: var(--special-opacity);
-}
-
-.bookmark {
-	width: 150px;
-	height: 42px;
 }
 
 .bookmark:active {
@@ -175,6 +164,7 @@ a {
 	line-height: 30px;
 	font-weight: bold;
 	border: 3px solid var(--basic-white);
+	padding: 7px 45px 8px 74px;
 }
 
 .adress {
@@ -204,25 +194,23 @@ a {
 	color: var(--deeply-grey);
 }
 
-.list-header1 {
+.list-header {
 	background-color: var(--deeply-grey);
 	list-style: none;
-	width: 940px;
-	height: 60px;
-	box-shadow: 0 5px 0 0 var(--deep-grey);	
+	box-shadow: 0 5px 0 0 var(--deep-grey);
+	padding-top: 16px;	
+	padding-bottom: 20px; 
 }
-.list-header1 a {
-	width: 122px;
-	height: 60px;
+.list-header a {
 	list-style: none;
 	color: var(--basic-white);
 }
 
-.list-header1 a:hover {
+.list-header a:hover {
 	background-color: var(--deep-grey);
 }
 
-.list-header1 a:active {
+.list-header a:active {
 	background-color: var(--header-grey);
 	color: var(--basic-white);
 	opacity: 0.5;
@@ -248,12 +236,14 @@ a {
 }
 
 .new {
+	max-width: 100px;
 	font-size: 14px;
 	line-height: 18px;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
-	width: 100px;
-	height: 30px;
+	text-align: center;
+	padding: 14px 17px 14px 17px;
+	text-transform: uppercase;
 }
 
 
@@ -262,19 +252,29 @@ a {
 	font-size: 24px;
 	line-height: 30px;
 	color: var(--basic-white);
-	width: 300px;
-	height: 123px;
+	max-width: 300px;
 }
 
+.promo h2 {
+	padding-top: 20px;
+	padding-bottom: 21px;
+	padding-right: 163px;
+	padding-left: 23px;
+}
 .promo a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 24px;
+	padding-left: 23px;
 	font-size: 14px;
 	line-height: 18px;
 	font-style: normal;
+	text-align: center;
 	color: var(--basic-white);
 	text-transform: uppercase;
 	background-color: var(--special-opacity1);
-	width: 135px;
-	height: 38px;
+	box-sizing: border-box;
+
 }
 
 .promo:first-child {
@@ -299,33 +299,64 @@ a {
 
 .popular-goods,
 .popular-manufactures {
-	width: 940px;
-	height: 89px;
 	font-size: 30px;
 	line-height: 30px;
 	color: var(--deeply-grey);
 	text-transform: uppercase;
 	background-color: var(--basic-pink);
-
+	padding-top: 29px;
+	padding-bottom: 30px;
 }
 
-.a-red {
-	width: 192px;
-	height: 38px;
+
+.a-open-catalog {
+	padding: 11px 46px 9px 46px;
+	text-align: center;
 	font-size: 14px;
 	line-height: 18px;
 	color: var(--basic-white);
 	text-transform: uppercase;
 	background-color: var(--basic-red);
-	text-align: center;
 }
 
-.a-red:hover {
+.a-open-catalog:hover {
 	background-color: var(--red-buttonh);
 }
 
-.a-red:active {
+.a-open-catalog:active {
 	background-color: var(--red-buttona);
+}
+
+.a-all-goods,
+.a-all-manufactures {
+	padding-top: 11px;
+	padding-bottom: 9px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--basic-white);
+	text-transform: uppercase;
+	background-color: var(--basic-red);
+}
+
+.a-all-goods:hover,
+.a-all-manufactures:hover {
+	background-color: var(--red-buttonh);
+}
+
+.a-all-goods:active,
+.a-all-manufactures:active {
+	background-color: var(--red-buttona);
+}
+
+.a-all-goods {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.a-all-manufactures{
+	padding-left: 39px;
+	padding-right: 38px;
 }
 
 .good-name {
@@ -346,6 +377,8 @@ del {
 	line-height: 18px;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
+	padding: 10px 44px 10px 32px;
+	text-align: center;
 }
 
 .buy {
@@ -354,6 +387,8 @@ del {
 	color: var(--basic-white);
 	text-transform: uppercase;
 	background-color: var(--basic-green);
+	text-align: center;
+	padding: 10px 40px 10px 30px;
 }
 
 .buy:hover {
@@ -371,6 +406,8 @@ del {
 	text-transform: uppercase;
 	background-color: var(--basic-white);
 	border: 3px solid var(--basic-green);
+	text-align: center;
+	padding: 11px 34px 9px 35px;
 }
 
 .to-bookmarks:hover {
@@ -391,8 +428,6 @@ del {
 }
 
 .logos-list {
-	width: 220px;
-	height: 145px;
 	background-color: var(--basic-white);
 	border: 1px solid var(--light-grey);
 	box-sizing: border-box;
@@ -406,8 +441,6 @@ del {
 	opacity: 0.5;
 }
 .service {
-	width: 1200px;
-	height: 522px;
 	background-color: var(--basic-background);
 }
 
@@ -426,18 +459,18 @@ del {
 }
 
 .button-service {
-	width: 240px;
-	height: 61px;
 	background-color: var(--deeply-grey);
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 30px;
 	text-align: center;
 	color: var(--basic-white);
+	padding: 14px 140px 17px 22px;
 }
 
-.button-service:active {
-	background-color: var(--basic-white);	
+.button-service:focus {
+	background-color: var(--basic-white);
+	color: var(--deeply-grey);	
 }
 
 .button-service:hover {
@@ -452,6 +485,24 @@ del {
 	font-size: 21px;
 	line-height: 30px;
 	color: var(--deeply-grey);
+}
+
+.a-send-order {
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--basic-white);
+	text-transform: uppercase;
+	background-color: var(--basic-red);
+	text-align: center;
+	padding: 10px 45px 10px 45px;
+}
+
+.a-send-order:hover {
+	background-color: var(--red-buttonh);
+}
+
+.a-send-order:active {
+	background-color: var(--red-buttona);
 }
 
 .h-about {
@@ -477,22 +528,21 @@ del {
 	color: var(--basic-black);
 }
 
-.a-red2 {
-	width: 220px;
-	height: 38px;
+.a-about-company {
 	font-size: 14px;
 	line-height: 18px;
 	color: var(--basic-white);
 	text-transform: uppercase;
 	background-color: var(--basic-red);
 	text-align: center;
+	padding: 11px 40px 9px 40px;
 }
 
-.a-red2:hover {
+.a-about-company:hover {
 	background-color: var(--red-buttonh);
 }
 
-.a-red2:active {
+.a-about-company:active {
 	background-color: var(--red-buttona);
 }
 .write-us {
@@ -502,14 +552,13 @@ del {
 }
 
 .button-write {
-	width: 300px;
-	height: 38px;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
 	color: var(--basic-white);
 	text-transform: uppercase;
 	background-color: var(--basic-red);
+	padding: 11px 61px 9px 62px; 
 }
 
 .placeholder {
@@ -519,14 +568,13 @@ del {
 }
 
 .button-send {
-	width: 460px;
-	height: 38px;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
 	color: var(--basic-white);
 	text-transform: uppercase;
 	background-color: var(--basic-red);
+	padding: 11px 199px 9px 199px;
 }
 
 .button-write:hover,
@@ -542,9 +590,7 @@ del {
 
 /*footer*/
 
-footer {
-	width: 1200px;
-	height: 300px;
+.footer-main {
 	background-color: var(--deeply-grey);
 }
 
@@ -558,16 +604,13 @@ footer {
 
 
 .feedback {
-	width: 1200px;
-	height: 107px;
 	background-color: var(--deep-grey);
 }
 
 .logo-footer {
-	width: 220px;
-	height: 68px;
 	background-color: var(--basic-red);
-	box-shadow: 0 5px 0 0 var(--red-buttona); 
+	box-shadow: 0 5px 0 0 var(--red-buttona);
+	padding: 21px 42px 20px 42px;   
 }
 
 .p-footer,
@@ -578,7 +621,7 @@ footer {
 }
 
 .nav-footer,
-.nav-footer1 {
+.nav-footer-yellow {
 	list-style: none;
 }
 .nav-footer a {
@@ -587,19 +630,19 @@ footer {
 	color: var(--basic-background);
 }
 
-.nav-footer1 a {
+.nav-footer-yellow a {
 	font-size: 18px;
 	line-height: 24px;
 	color: var(--special-yellowfooter);
 }
 
 .nav-footer a:hover,
-.nav-footer1 a:hover {
+.nav-footer-yellow a:hover {
 	text-decoration: underline;
 } 
 
 .nav-footer a:active,
-.nav-footer1 a:active {
+.nav-footer-yellow a:active {
 	color: var(--basic-background);
 	opacity: 0.5;
 } 
@@ -622,8 +665,6 @@ footer {
  
 .social-list a {
 	background-color: var(--social-grey);
-	width: 44px;
-	height: 44px;
 	border-radius: 45px;
 } 
 
@@ -636,12 +677,11 @@ footer {
 /*header*/
 
 .username {
-	width: 299px;
-	height: 45px;
 	color: var(--basic-black);
 	text-align: center;
 	background-color: var(--basic-white);
 	text-align: center;
+	padding: 12px 57px 12px 56px;
 }
 
 .order-account {
@@ -663,10 +703,10 @@ footer {
 /*main*/
 
 .h-navig-main {
-	width: 940px;
-	height: 89px;
 	background-color: var(--grey-catalog);
 	color: var(--basic-black);
+	padding-bottom: 30px;
+	padding-top: 29px;
 }
 
 .nav-list {
@@ -683,9 +723,7 @@ footer {
 	color: var(--basic-black);
 }
 
-.filter {
-	width: 220px;
-	height: 38px;
+.h-filter {
 	background-color: var(--special-light);
 	font-family: PT Sans, 'Arial', sans-serif;
 	font-style: normal;
@@ -694,19 +732,18 @@ footer {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black); 
+	padding: 10px 151px 10px 18px;
 }
 
+
 .price-range {
-	width: 220px;
-	height: 80px;
 	background-color: var(--special-light);
 }
 
 .price-input {
-	width: 95px;
-	height: 38px;
 	background-color: var(--special-light);
 }
+
 .legend-price,
 .legend-manufact {
 	font-family: PT Sans, 'Arial', sans-serif;
@@ -761,8 +798,6 @@ footer {
 }
 
 .show-button {
-	width: 220px;
-	height: 38px;
 	font-family: PT Sans, 'Arial', sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -770,11 +805,11 @@ footer {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black);
+	text-align: center;
+	padding: 10px 80px 10px 78px;
 }
 
 .sort {
-	width: 700px;
-	height: 38px;
 	background-color: var(--special-light);
 	font-family: PT Sans, 'Arial', sans-serif;
 	font-style: normal;
@@ -783,6 +818,8 @@ footer {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black); 
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .sort-list {
@@ -828,12 +865,12 @@ footer {
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-align: center;
 	color: var(--basic-black);
-	width: 38px;
-	height: 38px;
 	background-color: var(--basic-white);
 	border: 1px solid var(--border-grey);
 	border-radius: 2px;
+	padding: 10px 15px 10px 15px;
 }
 
 .next-button {
@@ -844,11 +881,11 @@ footer {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black);
-	width: 140px;
-	height: 38px;
 	background-color: var(--basic-white);
 	border: 1px solid var(--border-grey);
 	border-radius: 2px;
+	text-align: center;
+	padding: 10px 31px 10px 32px;
 }
 .list-pages a:hover,
 .next-button:hover {
@@ -866,8 +903,6 @@ footer {
 }
 
 .about-goods {
-	width: 1200px;
-	height: 261px;
 	background-color: var(--basic-background);
 }
 
@@ -876,6 +911,7 @@ footer {
 	line-height: 30px;
 	text-transform: uppercase;
 	color: var(--basic-black);
+	padding-top: 64px;
 }
 
 .p-about-goods {
@@ -885,6 +921,7 @@ footer {
 	font-size: 13px;
 	line-height: 24px;
 	color: var(--basic-black);
+	padding-bottom: 68px;
 
 }
 
@@ -897,13 +934,13 @@ footer {
 }
 
 .button-order-arrange {
-	width: 192px;
-	height: 38px;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
+	text-align: center;
+	padding: 11px 46px 9px 47px;
 }
 
 .button-order-arrange:hover {
@@ -915,12 +952,12 @@ footer {
 }
 
 .purchase {
-	width: 192px;
-	height: 38px;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+	text-align: center;
+	padding: 11px 31px 9px 32px;
 }
 
