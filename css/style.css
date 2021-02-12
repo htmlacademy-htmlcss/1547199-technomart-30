@@ -369,7 +369,6 @@ a {
 
 .a-open-catalog {
     max-width: 192px;
-    max-height: 38px;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-white);
@@ -396,7 +395,6 @@ a {
     line-height: 30px;
     color: var(--basic-white);
     max-width: 300px;
-    max-height: 123px;
 }
 
 .promo h2 {
