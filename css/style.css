@@ -94,6 +94,9 @@ a {
 
 /*header*/
 
+.content-container {
+    max-width: 940px;
+}
 .navigation {
     background-color: var(--basic-background);
     display: grid;
@@ -111,10 +114,8 @@ a {
 
 .navigation-top {
     background-color: var(--deep-grey);
-    max-width: 940px;
     display: grid;
     grid-template-columns: 220px 260px 160px 140px 160px;
-    max-width: 940px;
     margin: auto;
     
 }
@@ -189,7 +190,6 @@ a {
 .navigation-adress {
     display: grid;
     grid-template-columns: auto auto auto;
-    max-width: 940px;
     margin: auto;
     margin-bottom: 40px;
     padding-top: 46px;
@@ -265,7 +265,6 @@ a {
     padding-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    max-width: 940px;
     margin: auto;
     margin-bottom: 60px;
 }
@@ -307,7 +306,6 @@ a {
     margin: auto;
     margin-bottom: 60px;
     padding: 0;
-    width: 940px;
     gap: 20px;
 }
 
@@ -390,11 +388,6 @@ a {
     padding: 6px 15px 5px 16px;
     position: absolute;
     transform: rotate(45deg) translateY(-80px) translateX(88px);
-    overflow: hidden;
-}
-
-.promo .new {
-    position: fixed;
 }
 
 .promo {
@@ -407,8 +400,6 @@ a {
 }
 
 .promo h2 {
-    max-width: 114px;
-    max-height: 30px;
     padding-bottom: 14px;
     padding-top: 20px;
     padding-left: 23px;
@@ -417,8 +408,6 @@ a {
 }
 
 .promo a {
-    max-width: 135px;
-    max-height: 38px;
     font-size: 14px;
     line-height: 18px;
     font-style: normal;
@@ -472,7 +461,6 @@ a {
 .popular-goods,
 .popular-manufactures {
     margin: auto;
-    width: 940px;
     font-size: 30px;
     line-height: 30px;
     color: var(--deeply-grey);
@@ -481,6 +469,7 @@ a {
     padding-top: 29px;
     padding-bottom: 30px;
     padding-left: 30px;
+    width: 940px;
 }
 
 .popular-manufactures {
@@ -553,9 +542,9 @@ a {
     color: var(--deeply-grey);
     grid-template-columns: 720px 220px;
     margin: auto;
-    width: 940px;
     align-content: center;
     margin-bottom: 20px;
+
 }
 
 .list-of-goods {
@@ -566,13 +555,13 @@ a {
     padding: 0;
     list-style: none;
     gap: 20px;
-    width: 940px;
 }
 
 .good {
     border: 1px solid var(--light-grey);
     margin-top: 20px;
     padding-bottom: 8px;
+
 }
 
 .good-name {
@@ -651,7 +640,6 @@ del {
     padding: 0;
     list-style: none;
     column-gap: 20px;
-    max-width: 940px;
 }
 
 .logos-list {
@@ -659,8 +647,6 @@ del {
     border: 1px solid var(--light-grey);
     box-sizing: border-box;
     margin-bottom: 70px;
-    width: 220px;
-    height: 145px;
 }
 
 .logos-list:hover {
@@ -685,9 +671,7 @@ del {
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin: auto;
-    max-width: 940px;
     padding-top: 64px;
-
 }
 
 .service-bottom {
@@ -696,7 +680,6 @@ del {
     padding: 0;
     column-gap: 80px;
     margin: auto;
-    max-width: 940px;
 }
 
 .button-container {
@@ -832,7 +815,6 @@ del {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
-    max-width: 940px;
     column-gap: 160px;
     align-self: center;
 }
@@ -900,7 +882,6 @@ del {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    max-width: 940px;
 }
 
 .footer-adress {
@@ -924,7 +905,6 @@ del {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
-    max-width: 940px;
 }
 
 .logo-footer {
@@ -1039,7 +1019,6 @@ del {
     display: grid;
     grid-template-columns: 220px 1fr;
     margin: auto;
-    width: 940px;
     gap: 20px; 
 }
 
@@ -1061,7 +1040,6 @@ del {
     padding-bottom: 30px;
     padding-top: 29px;
     padding-left: 29px;
-    width: 940px;
 }
 
 .breadcrumbs {
@@ -1280,8 +1258,8 @@ del {
     display: grid;
     grid-template-rows: 1fr;
     margin: auto;
-    width: 940px;
 }
+
 .h-about-goods {
     font-size: 30px;
     line-height: 30px;
@@ -1298,7 +1276,6 @@ del {
     line-height: 24px;
     color: var(--basic-black);
     padding-bottom: 68px;
-
 }
 
 .basket-window {
