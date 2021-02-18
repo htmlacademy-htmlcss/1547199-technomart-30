@@ -286,7 +286,6 @@ a {
     color: var(--basic-white);
     padding: 16px 28px 20px 28px;
     text-align: center;
-
 }
 
 /*.list-header {
@@ -334,10 +333,10 @@ a {
     gap: 20px;
 }
 
-.slide:first-child {
-    background-image: url(../img/slide2.jpg);
+.slide {
     background-size: 620px 266px;
     background-repeat: no-repeat;
+    box-shadow: inset 0 104px 0 0 var(--background-slide);
     padding-bottom: 27px;
     grid-column: 1/3;
     grid-row: 2/4;
@@ -346,23 +345,14 @@ a {
     flex-direction: column;
 }
 
+.slide:first-child {
+    background-image: url(../img/slide2.jpg);
+}
+
 .slide:nth-child(2) {
     display: none;
     background-image: url(../img/slide1.jpg);
-    background-repeat: no-repeat;
-    padding-bottom: 27px;
-    /*display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	width: 620px;
-	height: 266px;
-	flex-direction: column;
-	box-sizing: border-box;
-	align-items: flex-start;
-	padding-left: 0;
-	padding-bottom: 27px;*/
 }
-
 
 .tool {
     font-weight: bold;
@@ -370,34 +360,30 @@ a {
     line-height: 36px;
     text-transform: uppercase;
     color: var(--basic-white);
-    background-color: var(--background-slide);
     max-width: 620px;
-    padding: 23px 50px 45px 24px;
+    padding: 23px 50px 5px 24px;
     margin: 0;
 }
 
 .slide p {
-    padding-top: 5px;
+    margin: 0;
     position: relative;
-	top: -64px;
 	margin-left: 24px;
+    padding-bottom: 115px;
+    margin-top: auto;
 }
 
 .a-open-catalog {
     width: 192px;
-    height: 38px;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-white);
     text-transform: uppercase;
     text-align: center;
     background-color: var(--basic-red);
-    padding: 11px 46px 9px 46px;
+    padding: 11px 46px 6px 46px;
     margin-left: 24px;
-    margin-right: 404px;
     box-sizing: border-box;
-    position: relative;
-    top: 30px;
 }
 
 .new {
@@ -428,9 +414,8 @@ a {
     color: var(--basic-white);
     padding-top: 20px;
     padding-left: 23px;
-    margin-bottom: 14px;
-    position: relative;
-    top: -24px;
+    padding-bottom: 14px;
+    margin: 0;
  }
 
 .promo a {
@@ -441,14 +426,11 @@ a {
     color: var(--basic-white);
     text-transform: uppercase;
     background-color: var(--special-opacity1);
+    max-width: 135px;
     margin-left: 22px;
-    margin-right: 142px;
-    flex-wrap: nowrap;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: relative;
-    top: -17px;
-
+    margin-bottom: 21px;
 }
 
 .promo a:hover {
@@ -694,6 +676,9 @@ del {
     width: 220px;
     height: 145px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logos-list:hover {
@@ -706,10 +691,6 @@ del {
 
 .logos-list a{
     display: flex;
-    justify-content: center;
-}
-
-.img logo {
 }
 
 .service {
@@ -840,7 +821,6 @@ del {
     background-color: var(--basic-red);
     text-align: center;
     padding: 11px 40px 9px 40px;
-    margin-top: 20px;
 }
 
 .a-about-company:hover {
@@ -1024,7 +1004,6 @@ del {
     grid-row: 1/2;
     list-style: none;
     display: flex; 
-    justify-content: space-between;
     box-sizing: border-box;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -1035,7 +1014,6 @@ del {
     grid-row: 2/3;
     list-style: none;
     display: flex; 
-    justify-content: space-between;
     box-sizing: border-box;
     justify-content: flex-end;
     flex-wrap: wrap;
