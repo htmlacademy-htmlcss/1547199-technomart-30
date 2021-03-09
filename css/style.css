@@ -1859,16 +1859,16 @@ margin-right: 58px;
     left: -1px;
 }
 
-.input-checkbox-checked:checked+label::after {
+.input-checkbox:checked+label::after {
     content: "";
     position: absolute;
-    width: 27px;
+    width: 26px;
     height: 23px;
     background-image: url(../img/icon-checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: -2px;
-    left: -1px;
+    top: -1px;
+    left: 4px;
 }
 
 .input-checkbox:hover+label::before {
@@ -1879,28 +1879,21 @@ margin-right: 58px;
     opacity: 0.3;
 }
 
-.input-checkbox-checked:checked:hover+label::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 23px;
-    background-image: url(../img/icon-checkbox-on-active.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    top: -2px;
-    left: -1px;
-}
 
-.input-checkbox-checked:checked:disabled+label::before {
+/*.input-checkbox:checked:hover+label::before {
     content: "";
     position: absolute;
-    width: 27px;
-    height: 23px;
-    background-image: url(../img/icon-checkbox-on-active.svg);
+    width: 21px;
+    height: 16px;
+    background-image: url(../img/icon-checkbox-on-hover.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: -2px;
-    left: -1px;
+    top: 1px;
+    left: 4px;
+}*/
+
+.input-checkbox:checked:disabled+label::before {
+    opacity: 0.3;
 }
 
 .input-checkbox-radio+label::before {
@@ -2207,11 +2200,21 @@ margin-right: 58px;
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto;    
+    margin: auto;
+    display: none; 
+    box-shadow: 10px 10px 10px 10px var(--shadow);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-window {
-    display: none;
     background-color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
@@ -2222,7 +2225,6 @@ margin-right: 58px;
     width: 620px;
     height: 430px;
 }
-
 
 .modal-write-us::before {
     content: "";
@@ -2361,10 +2363,10 @@ margin-right: 58px;
 .button-send:active {
     background-color: var(--red-buttona);
 }
+
 /* map*/
     
 .modal-map {
-    display: none;
     width: 943px;
     height: 449px;
     border: 1px solid var(--basic-white);
@@ -2387,10 +2389,32 @@ margin-right: 58px;
     left: 1px;   
 }
 
+.modal-close-map {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 20px;
+    right: 11px;
+}
+
+.modal-close-map::before,
+.modal-close-map::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 1px;
+    right: 1px;
+}
 /*modal basket*/
 
 .modal-basket {
-    display: none;
     width: 620px;
     height: 282px;
     background-color: var(--basic-white);
