@@ -60,10 +60,52 @@
 }
 
 @font-face {
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Cuprum"), url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Cuprum"), url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Cuprum"), url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
+}
+
+@font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("PT Sans"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("PT Sans"), url("../fonts/ptsansitalic.woff2") format("woff2"), url("../fonts/ptsansitalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("PT Sans"), url("../fonts/ptsansbolditalic.woff2") format("woff2"), url("../fonts/ptsansbolditalic.woff") format("woff");
 }
 
 /*Global*/
@@ -167,6 +209,7 @@ a {
     border: none;
     width: 150px;
     outline: none;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -217,11 +260,11 @@ a {
 }
 
 .search-button {
-    height: 17px;
-    width: 17px;
+    height: 18px;
+    width: 18px;
     position: absolute;
-    top: 1px;
-    left: 1px;
+    top: 12px;
+    left: 15px;
     background: transparent;
     cursor: pointer;
 }
@@ -232,8 +275,8 @@ a {
     width: 17px;
     height: 17px;
     background-image: url(../img/icon-search.svg);
-    top: 12px;
-    left: 15px;
+    top: 1px;
+    left: 1px;
     opacity: 0.5;
 }
 
@@ -334,7 +377,7 @@ a {
     line-height: 30px;
     font-weight: bold;
     border: 3px solid var(--basic-white);
-    width: 270px;
+    width: 275px;
     padding: 7px 40px 8px 74px;
     position: relative;
     box-sizing: border-box;
@@ -373,6 +416,7 @@ a {
     padding-bottom: 12px;
     margin-top: 10px;
     outline: none;
+    cursor: pointer;
 
 }
 
@@ -865,7 +909,6 @@ a {
     width: 220px;
     height: 318px;
     padding-bottom: 21px;
-    position: relative;
 }
 
 .good div {
@@ -890,8 +933,8 @@ a {
     background-image: url(../img/new.png);
     background-repeat: no-repeat;
     background-position: 0 0;
-    left: 148px;
-    bottom: 245px;
+    left: 149px;
+    bottom: 246px;
 }
 
 .good-name {
@@ -933,28 +976,21 @@ del {
     position: absolute;
     box-sizing: border-box;
     margin: 0;
-    padding-top: 38px;
-    padding-left: 30px;
 }
 
-.good-hover::before {
-    content: "";
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    background-image: url(../img/icon-cart.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    left: 50px;
-    top: 50px;
-    opacity: 0.3
-}
+
 .good:hover .good-hover {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 38px;
+    margin-bottom: 42px;
 }
 
 .good:hover {
-    box-shadow: 0 4px 20px var(--light-grey);   
+    box-shadow: 0 10px 20px var(--light-grey);   
 }
 
 .good:hover img {
@@ -969,14 +1005,28 @@ del {
     text-transform: uppercase;
     background-color: var(--basic-green);
     text-align: center;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 40px 10px 45px;
     width: 135px;
     border: none;
     box-shadow: 0 3px 0 var(--buy-shadow);
     margin-bottom: 10px;
     outline: none;
+    position: relative;
+    cursor: pointer;
 }
 
+.buy::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 25px;
+    top: 11px;
+    opacity: 0.3
+}
 .buy:hover {
     background-color: var(--green-success);
 }
@@ -997,6 +1047,7 @@ del {
     padding-bottom: 9px;
     width: 135px;
     outline: none;
+    cursor: pointer;
 
 }
 
@@ -1039,7 +1090,7 @@ del {
 }
 
 .logos-list:hover {
-    box-shadow: 0 0 10px var(--light-grey);
+    box-shadow: 0 0 20px var(--light-grey);
 }
 
 .logos-list:active {
@@ -1110,6 +1161,7 @@ del {
     width: 240px;
     border: none;
     outline: none;
+    cursor: pointer;
 
 }
 
@@ -1347,10 +1399,15 @@ li:last-child .p-service-list {
     border: none;
     margin-top: 20px;
     outline: none;
+    cursor: pointer;
 
 }
 
-
+.contacts-map {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
 /*footer*/
 
@@ -1885,10 +1942,10 @@ margin-right: 58px;
 .input-checkbox+label::before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border: 2px solid var(--basic-greylight);
-    border-radius: 3px;
+    border-radius: 4px;
     top: -2px;
     left: -1px;
 }
@@ -1913,7 +1970,7 @@ margin-right: 58px;
     background-image: url(../img/icon-checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: -1px;
+    top: -2px;
     left: -1px;
 }
 
@@ -1925,10 +1982,10 @@ margin-right: 58px;
     background-image: url(../img/icon-checkbox-on-hover.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: -1px;
+    top: -2px;
     left: -1px;
 }
-.input-checkbox:checked:disabled+label::before {
+.input-checkbox:checked:disabled+label::after {
     opacity: 0.3;
 }
 
@@ -1937,14 +1994,14 @@ margin-right: 58px;
     position: absolute;
     width: 20px;
     height: 20px;
-    border: 2px solid var(--basic-greylight);
+    border: 3px solid var(--basic-greylight);
     border-radius: 50%;
     top: -3px;
     left: -2px;
 }
 
 .input-checkbox-radio:hover+label::before {
-    border: 2px solid var(--grey-checkbox);
+    border: 3px solid var(--grey-checkbox);
 }
 
 .input-checkbox-radio:disabled+label::before {
@@ -1954,8 +2011,8 @@ margin-right: 58px;
 .input-checkbox-radio:checked+label::after {
     content: "";
     position: absolute;
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     background-color: var(--basic-greylight);
     border-radius: 50%;
     top: 5px;
@@ -1965,8 +2022,8 @@ margin-right: 58px;
 .input-checkbox-radio:checked:hover+label::after {
     content: "";
     position: absolute;
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     background-color: var(--grey-checkbox);
     border-radius: 50%;
     top: 5px;
@@ -2008,6 +2065,7 @@ margin-right: 58px;
     padding: 10px 80px 10px 78px;
     border: 1px solid var(--border-grey);
     width: 220px;
+    cursor: pointer;
 }
 
 .show-button:hover {
@@ -2179,6 +2237,7 @@ margin-right: 58px;
     margin: auto;
     margin-left: 0;
     outline: none;
+    cursor: pointer;
 
 }
 
@@ -2226,40 +2285,6 @@ margin-right: 58px;
     padding-bottom: 68px;
 }
 
-.basket-window {
-    display: none;
-}
-.p-basket-window {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    color: var(--basic-black);
-}
-.button-order-arrange {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: var(--basic-white);
-    background-color: var(--basic-red);
-    text-align: center;
-    padding: 11px 46px 9px 47px;
-}
-.button-order-arrange:hover {
-    background-color: var(--red-buttonh);
-}
-.button-order-arrange:active {
-    background-color: var(--red-buttona);
-}
-.purchase {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-    text-align: center;
-    padding: 11px 31px 9px 32px;
-}
 
 /*modal window*/
 
@@ -2276,23 +2301,30 @@ margin-right: 58px;
 
 .modal-show {
     display: block;
-    animation: bounce 0.6s;
 }
 
 .modal-error {
-    animation: shake 0.6s;
+
 }
 
 .modal-window {
+    top: 120px;
+    bottom: auto;
     background-color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-black);
     box-sizing: border-box;
     border: 1px solid var(--basic-white);
-    box-shadow: 10px 10px 10px 10px var(--shadow);
     width: 620px;
-    height: 430px;
+}
+
+.modal-filter {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
 }
 
 .modal-write-us::before {
@@ -2301,59 +2333,64 @@ margin-right: 58px;
     width: 620px;
     height: 7px;
     background-color: var(--basic-red);
-    bottom: 422px;
+    top: -1px;
     left: -1px;   
 }
 
 .modal-close {
     position: absolute;
-    width: 21px;
-    height: 21px;
+    width: 25px;
+    height: 25px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    top: 20px;
-    right: 11px;
+    top: 14px;
+    right: 5px;
     outline: none;
-
 }
 
 .modal-close::before,
 .modal-close::after {
     content: "";
     position: absolute;
-    width: 21px;
-    height: 21px;
-    background-image: url(../img/close.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    top: 1px;
-    right: 1px;
+    width: 25px;
+    height: 4px;
+    background-color: var(--basic-red);
+    top: 14px;
+    right: 5px;
 }
 
-.modal-write-us {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    padding-top: 46px;
-    margin: auto;
+.modal-close::before {
+    transform: rotate(45deg);
+}
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-close::before:hover,
+.modal-close::after:hover {
+    background-color: var(--red-buttonh);
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+    background-color: var(--red-buttona);
 }
 
 .modal-name {
+    margin-top: 46px;
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
     width: 220px;
-    margin-left: 80px;
-    margin-bottom: 13px;
 }
 
 .modal-email {
     display: flex;
     flex-direction: column;
     width: 220px;
-    margin-right: 80px;
-    margin-bottom: 13px;
+    margin-top: 46px;
+    margin-right: 70px;
 }
 
 .modal-name label,
@@ -2370,7 +2407,7 @@ margin-right: 58px;
     line-height: 24px;
     color: var(--grey);
     border: 2px solid var(--basic-greylight);
-    padding: 7px 10px 7px 12px;
+    padding: 5px 10px 6px 12px;
 }
 
 .modal-textarea label {
@@ -2379,14 +2416,12 @@ margin-right: 58px;
     color: var(--basic-black);
     margin-bottom: 11px;
 }
-.modal-textarea {
-    margin-left: 80px;
-}
 
-.modal-textarea textarea {
-    border: 2px solid var(--basic-greylight);
+.modal-textarea {
+    margin-top: 11px;
+    margin-left: 80px;
+    margin-right: 80px;
     width: 460px;
-    height: 114px;
 }
 
 .placeholder {
@@ -2396,18 +2431,37 @@ margin-right: 58px;
     font-size: 13px;
     line-height: 24px;
     color: var(--grey);
+    box-sizing: border-box;
     width: 460px;
     height: 114px;
     margin-top: 11px;
+    border: 2px solid var(--basic-greylight);
+    resize: none;
+    padding: 0;
+    padding-top:  5px;
+    padding-left: 10px;
+}
+
+.modal-name input:hover,
+.modal-email input:hover,
+.modal-textarea input:hover {
+    border: 2px solid var(--basic-black);
+}
+
+.modal-name input:focus,
+.modal-email input:focus,
+.modal-textarea input:focus {
+    border: 2px solid var(--basic-black);
 }
 
 .modal-footer {
     background-color: var(--modal-background);
     margin: auto;
     margin-top: 37px;
-    width: 620px;
+    max-width: 620px;
     height: 38px;
-    padding: 37px 80px 37px 80px;
+    padding: 37px 0 37px 80px;
+
 }
 
 .button-send {
@@ -2438,11 +2492,16 @@ margin-right: 58px;
 /* map*/
     
 .modal-map {
-    width: 943px;
-    height: 449px;
+    top: 120px;
+    bottom: auto;
+    background-color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+    box-sizing: border-box;
     border: 1px solid var(--basic-white);
-    box-shadow: 5px 5px 5px 5px var(--shadow);
-}
+    width: 943px;
+ }
 
 .modal-map iframe {
   border: none;
@@ -2454,53 +2513,72 @@ margin-right: 58px;
     width: 943px;
     height: 7px;
     background-color: var(--basic-red);
-    bottom: 443px;
-    left: 1px;   
+    top: -1px;
+    left: -1px;   
 }
-
 .modal-close-map {
     position: absolute;
-    width: 21px;
-    height: 21px;
+    width: 25px;
+    height: 25px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    top: 20px;
-    right: 11px;
+    top: 14px;
+    right: 5px;
     outline: none;
-
 }
+
 
 .modal-close-map::before,
 .modal-close-map::after {
     content: "";
     position: absolute;
-    width: 21px;
-    height: 21px;
-    background-image: url(../img/close.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    top: 1px;
-    right: 1px;
+    width: 25px;
+    height: 4px;
+    background-color: var(--basic-red);
+    top: 14px;
+    right: 5px;
+}
+
+.modal-close-map::before {
+    transform: rotate(45deg);
+}
+.modal-close-map::after {
+    transform: rotate(-45deg);
+}
+
+.modal-close-map::before:hover,
+.modal-close-map::after:hover {
+    background-color: var(--red-buttonh);
+}
+
+.modal-close-map:active::before,
+.modal-close-map:active::after {
+    background-color: var(--red-buttona);
 }
 /*modal basket*/
 
 .modal-basket {
-    width: 620px;
-    height: 282px;
+    top: 120px;
+    bottom: auto;
     background-color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+    box-sizing: border-box;
     border: 1px solid var(--basic-white);
-    box-shadow: 5px 5px 5px 5px var(--shadow);
+    width: 620px;
 }
 
 .modal-basket div {
     background-color: var(--modal-background);
     margin-top: 37px;
-    max-width: 620px;
     height: 38px;
-    padding: 37px 80px 37px 80px;
+    padding: 37px 0 37px 0px;
     display: flex;
     justify-content: space-around;
+    width: 620px;
+    margin: auto; 
 }
 
 .modal-basket p {
@@ -2509,8 +2587,21 @@ margin-right: 58px;
     font-weight: bold;
     color: var(--basic-black);
     margin-top: 73px;
-    margin-bottom: 68px; 
+    margin-bottom: 67px; 
     margin-left: 175px;
+    position: relative;
+}
+
+.modal-basket p::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background-image: url(../img/icon-mark.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0; 
+    top: -20px;
+    left: -100px;   
 }
 
 .a-buy {
@@ -2521,6 +2612,7 @@ margin-right: 58px;
     background-color: var(--basic-red);
     text-align: center;
     padding: 11px 46px 9px 47px;
+    margin-left: 110px;
 }
 
 .a-buy:hover {
@@ -2539,15 +2631,65 @@ margin-right: 58px;
     background-color: var(--basic-white);
     text-align: center;
     padding: 11px 31px 9px 32px; 
-    border: 1px solid var(--basic-black)  ; 
+    margin-right: 114px; 
+    cursor: pointer;
+    border: 1px solid var(--basic-white);
 }
 
-.modal-basket::after {
+.next-buy:hover {
+    border: 1px solid var(--basic-greylight);
+}
+
+.next-buy:active {
+    border: 1px solid var(--basic-red);
+}
+.modal-basket::before {
     content: "";
     position: absolute;
     width: 620px;
     height: 7px;
     background-color: var(--basic-red);
-    bottom: 443px;
-    left: 1px;   
+    top: -1px;
+    left: -1px; 
+}
+
+.modal-close-basket {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 14px;
+    right: 5px;
+    outline: none;
+}
+
+
+.modal-close-basket::before,
+.modal-close-basket::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: var(--basic-red);
+    top: 14px;
+    right: 5px;
+}
+
+.modal-close-basket::before {
+    transform: rotate(45deg);
+}
+.modal-close-basket::after {
+    transform: rotate(-45deg);
+}
+
+.modal-close-basket::before:hover,
+.modal-close-basket::after:hover {
+    background-color: var(--red-buttonh);
+}
+
+.modal-close-basket:active::before,
+.modal-close-basket:active::after {
+    background-color: var(--red-buttona);
 }
