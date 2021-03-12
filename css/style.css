@@ -1162,7 +1162,6 @@ del {
     border: none;
     outline: none;
     cursor: pointer;
-
 }
 
 .button-service:hover {
@@ -1175,7 +1174,7 @@ del {
     color: var(--deeply-grey);
 }
 
-.button-serviche:focus {
+.button-service:focus {
     background-color: var(--basic-white);
     color: var(--deeply-grey);
 }
@@ -1543,6 +1542,7 @@ margin-right: 58px;
 
 .container-mail a:hover {
     color: var(--special-yellowfooter);
+    text-decoration: underline;
 }
 
 .container-mail a:active {
@@ -1857,10 +1857,12 @@ margin-right: 58px;
 
 .range-controls .toggle-min {
     left: 18px;
+    outline: none;
 }
 
 .range-controls .toggle-max {
     left: 122px;
+    outline: none;
 }
 
 .price-controls input {
@@ -1942,16 +1944,25 @@ margin-right: 58px;
 .input-checkbox+label::before {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--basic-greylight);
-    border-radius: 4px;
+    width: 24px;
+    height: 23px;
+    background-image: url(../img/icon-checkbox-square.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
     top: -2px;
     left: -1px;
 }
 
-.input-checkbox:hover:not(:checked)+label::before {
-    border: 2px solid var(--grey-checkbox);
+.input-checkbox+label:hover::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 23px;
+    background-image: url(../img/icon-checkbox-square-hover.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -2px;
+    left: -1px;
 }
 
 .input-checkbox:disabled:not(:checked)+label::before {
@@ -1959,13 +1970,13 @@ margin-right: 58px;
 }
 
 .input-checkbox:checked+label::before {
-    border: none;
+    background-image: none;
 }
 
 .input-checkbox:checked+label::after {
     content: "";
     position: absolute;
-    width: 26px;
+    width: 27px;
     height: 23px;
     background-image: url(../img/icon-checkbox-on.svg);
     background-repeat: no-repeat;
@@ -1977,7 +1988,7 @@ margin-right: 58px;
 .input-checkbox:checked:hover+label::after {
     content: "";
     position: absolute;
-    width: 26px;
+    width: 27px;
     height: 23px;
     background-image: url(../img/icon-checkbox-on-hover.svg);
     background-repeat: no-repeat;
@@ -2367,8 +2378,8 @@ margin-right: 58px;
     transform: rotate(-45deg);
 }
 
-.modal-close::before:hover,
-.modal-close::after:hover {
+.modal-close:hover::before,
+.modal-close:hover::after {
     background-color: var(--red-buttonh);
 }
 
@@ -2547,8 +2558,8 @@ margin-right: 58px;
     transform: rotate(-45deg);
 }
 
-.modal-close-map::before:hover,
-.modal-close-map::after:hover {
+.modal-close-map:hover::before,
+.modal-close-map:hover::after {
     background-color: var(--red-buttonh);
 }
 
@@ -2684,8 +2695,8 @@ margin-right: 58px;
     transform: rotate(-45deg);
 }
 
-.modal-close-basket::before:hover,
-.modal-close-basket::after:hover {
+.modal-close-basket:hover::before,
+.modal-close-basket:hover::after {
     background-color: var(--red-buttonh);
 }
 
