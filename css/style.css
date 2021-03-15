@@ -232,6 +232,7 @@ a {
     max-width: 271px;
     margin-right: 20px;
     padding-right: 143px;
+
 }
 
 .input-search,
@@ -240,13 +241,28 @@ a {
     outline: none;
 }
 
+.input-search::-webkit-input-placeholder {
+    color: var(--basic-white);   
+}
+.input-search::-moz-placeholder {
+    color: var(--basic-white); 
+}
+
 .input-search {
     height: 42px;
-    color: var(--basic-white);
+    color: var(--basic-white); 
     background-color: var(--deep-grey);
     padding: 0;
     padding-left: 42px;
     position: relative;
+}
+
+.input-search:focus::-moz-placeholder {
+    color: var(--basic-black);
+}
+
+.input-search:focus::-webkit-input-placeholder {
+    color: var(--basic-black);   
 }
 
 .input-search:focus {
