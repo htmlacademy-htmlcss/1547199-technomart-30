@@ -1423,6 +1423,7 @@ li:last-child .p-service-list {
     outline: none;
     cursor: pointer;
     padding: 0;
+    background: transparent;
 }
 
 /*footer*/
